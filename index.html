@@ -17,6 +17,7 @@
         <div class="flex-header-wrapper">
             <div class="img-container">
                 <img class="logo" src="./assets/img/Rectangle.svg" alt=""/>
+                <img class="logo-tablet-phone" src="./assets/img/Logo-tablet-phone.svg" alt="">
             </div>
             <div class="link-container">
                 <div class="links">Ipsum</div>
@@ -44,14 +45,206 @@
                 </div>
             </div>
 
-            <div class="burger">
-                <img src="./assets/img/Mask.svg" alt=""/>
+<!--            links container for mobile nav-->
+        <div class="link-container-mobile" id="myLinks">
+            <a href="javascript:void(0)" onclick="linkClickOne()" class="links-mobile" id="linkOne">Ipsum</a>
+            <a href="javascript:void(0)" onclick="linkClickTwo()" class="links-mobile" id="linkTwo">Ipsum</a>
+            <a href="javascript:void(0)" onclick="linkClickThree()" class="links-mobile" id="linkThree">Ipsum</a>
+            <a href="javascript:void(0)" onclick="linkClickFour()" class="links-mobile" id="linkFour">Ipsum</a>
+
+            <div class="dropdown-content-mobile">
+                <div class="dropdown-content-part-mobile" id="linksToDrop">
+                    <h3>Ipsum Lorem</h3>
+                    <a href="#">Link</a>
+                    <a href="#">Link</a>
+                    <a href="#">Link</a>
+                    <a href="#">Link</a>
+                    <a href="#">Link</a>
+                </div>
+                <div class="dropdown-content-part">
+                    <h3>Ipsum Lorem</h3>
+                    <a href="#">Link</a>
+                    <a href="#">Link</a>
+                    <a href="#">Link</a>
+                    <a href="#">Link</a>
+                    <a href="#">Link</a>
+                </div>
             </div>
+        </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <div class="burger" id="burger">
+                    <img src="./assets/img/Mask.svg" alt=""/>
+                </div>
+                <div class="close-nav" id="closeBtn">
+                    <img src="./assets/img/x.svg" alt=""/>
+                </div>
+            </a>
+
+            <script>
+
+                function myFunction() {
+                    let x = document.getElementById("myLinks");
+                    let burger = document.getElementById("burger")
+                    let closeBtn = document.getElementById("closeBtn")
+                    if (x.style.display === "flex") {
+                        x.style.display = "none";
+                        burger.style.display = "flex";
+                        closeBtn.style.display = "none";
+                    } else {
+                        x.style.display = "flex";
+                        burger.style.display = "none";
+                        closeBtn.style.display = "flex";
+                    }
+                }
+
+                function linkClickOne() {
+                    let dropLink = document.getElementById("linksToDrop")
+                    dropLink.style.display = "flex";
+                }
+                function linkClickTwo() {
+                    let dropLink = document.getElementById("linksToDrop")
+                    dropLink.style.display = "flex";
+
+                }
+                function linkClickThree() {
+                    let dropLink = document.getElementById("linksToDrop")
+                    dropLink.style.display = "flex";
+
+                }
+                function linkClickFour() {
+                    let dropLink = document.getElementById("linksToDrop")
+                    dropLink.style.display = "flex";
+
+                }
+
+            </script>
         </div>
     </div>
 </header>
-<section class="main">
 
+<!--Second part of assignment-->
+
+<section class="main">
+    <div class="container">
+        <h1 class="title">Proident anim <span class="title-span">nor nulla iste.</span></h1>
+        <div class="text-and-links">
+            <div class="text-and-links-p"><p>Minim modi yet omnis nor quia so</p> <p>minima.</p></div>
+            <div class="three-links">
+                <a class="blue-link"><img src="./assets/img/email.svg" alt=""/>Ipsum Lorem</a>
+                <a class="white-link"><img src="./assets/img/link.svg" alt=""/>Ipsum Lorem</a>
+                <a class="white-link"><img src="./assets/img/location.svg" alt=""/>Ipsum Lorem</a>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Third part of assignment-->
+
+
+<section class="main">
+    <div class="container">
+        <div class="third-part-wrapper">
+            <div class="left-part">
+                <img src="./assets/img/mountain.svg" alt=""/>
+                <div class="left-part-links-wrapper">
+                    <a class="left-part-link"><img src="./assets/img/link.svg" alt=""/>Ipsum Lorem</a>
+                    <a class="left-part-link"><img src="./assets/img/link.svg" alt=""/>Ipsum Lorem</a>
+                    <a class="left-part-link"><img src="./assets/img/link.svg" alt=""/>Ipsum Lorem</a>
+                </div>
+            </div>
+
+            <div class="right-part">
+                <div class="top-text">
+                    <p class="top-text-p">Numquam.<span class="top-text-span"> Esse aliquip do, magni.</span></p>
+                    <h2>Minima ad for vitae sit</h2>
+                    <a class="top-text-link">Ipsum Lorem</a>
+                </div>
+                <div class="img-with-links">
+                    <img src="./assets/img/right-side-mountain.svg" alt=""/>
+                    <div class="right-links">
+                        <a class="round-link"><img src="./assets/img/white-link.svg" alt=""/>Ipsum Lorem</a>
+                        <p class="right-links-p">Adipisicing unde vel so dolore,<br/> <span class="right-links-span">consequatur.</span>
+                        </p>
+                        <div class="right-links-p-tablet-phone"><p>Adipisicing</p> <p>unde vel so</p> <p>dolore,</p><p>consequatur.</p></div>
+                        <a class="top-text-link">Ipsum Lorem</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Fourth part of assignment-->
+
+<section class="main">
+    <div class="container-fourth">
+        <div class="content-wrapper">
+            <div class="section-header">
+                <h2 style="color: #262628;">Officia ut</h2>
+                <a class="top-text-link">Ipsum Lorem</a>
+            </div>
+            <div class="cards-wrapper">
+                <div class="card-mobile">
+                    <img src="./assets/img/card-mountains.svg" alt=""/>
+                    <p class="card-p">Adipisicing unde vel so dolore,<br/> <span
+                            class="right-links-p">consequatur.</span></p>
+                    <a class="card-white-link"><img src="./assets/img/link.svg" alt=""/>Ipsum Lorem</a>
+                    <a class="card-blue-link"><img src="./assets/img/white-link.svg" alt=""/>Ipsum Lorem</a>
+                </div>
+                <div class="card-mobile">
+                    <img src="./assets/img/card-mountains.svg" alt=""/>
+                    <p class="card-p">Adipisicing unde vel so dolore,<br/> <span
+                            class="right-links-p">consequatur.</span></p>
+                    <a class="card-white-link"><img src="./assets/img/link.svg" alt=""/>Ipsum Lorem</a>
+                    <a class="card-blue-link"><img src="./assets/img/white-link.svg" alt=""/>Ipsum Lorem</a>
+                </div>
+                <div class="card-mobile">
+                    <img src="./assets/img/card-mountains.svg" alt=""/>
+                    <p class="card-p">Adipisicing unde vel so dolore,<br/> <span
+                            class="right-links-p">consequatur.</span></p>
+                    <a class="card-white-link"><img src="./assets/img/link.svg" alt=""/>Ipsum Lorem</a>
+                    <a class="card-blue-link"><img src="./assets/img/white-link.svg" alt=""/>Ipsum Lorem</a>
+                </div>
+                <div class="card-mobile">
+                    <img src="./assets/img/card-mountains.svg" alt=""/>
+                    <p class="card-p">Adipisicing unde vel so dolore,<br/> <span
+                            class="right-links-span">consequatur.</span></p>
+                    <a class="card-white-link"><img src="./assets/img/link.svg" alt=""/>Ipsum Lorem</a>
+                    <a class="card-blue-link"><img src="./assets/img/white-link.svg" alt=""/>Ipsum Lorem</a>
+                </div>
+                <div class="card-tablet">
+                    <img src="./assets/img/card-mountains.svg" alt=""/>
+                    <p class="card-p">Adipisicing unde vel so dolore,<br/> <span
+                            class="right-links-p">consequatur.</span></p>
+                    <a class="card-white-link"><img src="./assets/img/link.svg" alt=""/>Ipsum Lorem</a>
+                    <a class="card-blue-link"><img src="./assets/img/white-link.svg" alt=""/>Ipsum Lorem</a>
+                </div>
+                <div class="card-tablet">
+                    <img src="./assets/img/card-mountains.svg" alt=""/>
+                    <p class="card-p">Adipisicing unde vel so dolore,<br/> <span
+                            class="right-links-p">consequatur.</span></p>
+                    <a class="card-white-link"><img src="./assets/img/link.svg" alt=""/>Ipsum Lorem</a>
+                    <a class="card-blue-link"><img src="./assets/img/white-link.svg" alt=""/>Ipsum Lorem</a>
+                </div>
+                <div class="card-desktop">
+                    <img src="./assets/img/card-mountains.svg" alt=""/>
+                    <p class="card-p">Adipisicing unde vel so dolore,<br/> <span
+                            class="right-links-p">consequatur.</span></p>
+                    <a class="card-white-link"><img src="./assets/img/link.svg" alt=""/>Ipsum Lorem</a>
+                    <a class="card-blue-link"><img src="./assets/img/white-link.svg" alt=""/>Ipsum Lorem</a>
+                </div>
+                <div class="card-desktop">
+                    <img src="./assets/img/card-mountains.svg" alt=""/>
+                    <p class="card-p">Adipisicing unde vel so dolore,<br/> <span
+                            class="right-links-p">consequatur.</span></p>
+                    <a class="card-white-link"><img src="./assets/img/link.svg" alt=""/>Ipsum Lorem</a>
+                    <a class="card-blue-link"><img src="./assets/img/white-link.svg" alt=""/>Ipsum Lorem</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 </body>
